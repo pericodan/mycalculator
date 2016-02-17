@@ -1,5 +1,5 @@
 /**
- * Author: Kristine Elaine P. Bautista
+ * Author: Perico Dan B. Dionisio
  * Program Description: Calculator of Simple Mathematical Functions
 **/
 
@@ -38,7 +38,9 @@ public class MyCalculator {
 	public int nfactorial(int n){
 		int factorial = 1;
 		
-		for(int i=1;i<n;i++)
+		if(n<0) return -1; //means math error
+		
+		for(int i=1;i<=n;i++)
 			factorial *= i;
 		
 		return factorial;
@@ -57,7 +59,7 @@ public class MyCalculator {
 			else return middle;
 		}
 		
-		return 1;
+		return -1;
 	}
 	
 }
